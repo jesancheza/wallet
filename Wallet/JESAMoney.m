@@ -16,18 +16,36 @@
 
 @implementation JESAMoney
 
--(id)initWithAmount:(NSUInteger) amount{
++(instancetype) dollarWithAmount:(NSUInteger) amount{
+    JESAMoney *dollar = [[JESAMoney alloc] initWithAmount:amount
+                                                     currency:@"USD"];
+    
+    return dollar;
+}
+
++(instancetype) euroWithAmount:(NSUInteger) amount{
+    
+    JESAMoney *euro = [[JESAMoney alloc] initWithAmount:amount
+                                               currency:@"EUR"];
+    
+    return euro;
+    
+}
+
+-(id)initWithAmount:(NSUInteger) amount
+           currency:(NSString *)currency{
     
     if (self = [super init]) {
         _amount = amount;
+        _currency = currency;
     }
     
     return self;
 }
 
 -(JESAMoney *) times:(NSUInteger) multiplier{
-    return [[JESAMoney alloc]
-            initWithAmount:self.amount * multiplier];
+    return [JESAMoney
+            euroWithAmount:self.amount * multiplier];
 }
 
 #pragma mark - Equality

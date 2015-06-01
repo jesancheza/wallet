@@ -29,7 +29,42 @@
 
 -(void) testThatInitDoesNotRaisesException{
     
-    XCTAssertNoThrow([[JESAMoney alloc] initWithAmount:3]);
+    XCTAssertNoThrow([JESAMoney dollarWithAmount:3]);
+    XCTAssertNoThrow([JESAMoney euroWithAmount:3]);
+}
+
+-(void) testCurrency{
+    
+    JESAMoney *dollars = [JESAMoney dollarWithAmount:1];
+    
+    XCTAssertEqualObjects(@"USD", [dollars currency]);
+    
+    JESAMoney *euros = [JESAMoney euroWithAmount:1];
+    
+    XCTAssertEqualObjects(@"EUR", [euros currency]);
+}
+
+- (void)testMultiplication {
+    
+    JESAMoney *five = [JESAMoney euroWithAmount:5];
+    JESAMoney *product = [five times: 2];
+    XCTAssertEqualObjects(product, [JESAMoney euroWithAmount:10]);
+    
+    JESAMoney *fiveUSD = [JESAMoney dollarWithAmount:5];
+    JESAMoney *productUSD = [fiveUSD times:2];
+    
+    XCTAssertEqualObjects(productUSD, [JESAMoney dollarWithAmount:10]);
+}
+
+-(void) testEquality{
+    JESAMoney *five = [JESAMoney euroWithAmount:5];
+    JESAMoney *otherFive = [JESAMoney euroWithAmount:5];
+    
+    XCTAssertEqualObjects(five, otherFive);
+    
+    JESAMoney *seven = [JESAMoney euroWithAmount:7];
+    
+    XCTAssertNotEqual(seven, five);
 }
 
 @end

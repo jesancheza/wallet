@@ -10,7 +10,13 @@
 
 @interface JESAMoney : NSObject
 
--(id)initWithAmount:(NSUInteger) amount;
+@property (copy, readonly) NSString *currency;
+
++(instancetype) dollarWithAmount:(NSUInteger) amount;
++(instancetype) euroWithAmount:(NSUInteger) amount;
+
+-(id)initWithAmount:(NSUInteger) amount
+           currency:(NSString *) currency;
 
 -(JESAMoney *) times:(NSUInteger) multiplier;
 
