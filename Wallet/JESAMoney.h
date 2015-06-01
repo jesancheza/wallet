@@ -1,5 +1,5 @@
 //
-//  JESAEuro.h
+//  JESAMoney.h
 //  Wallet
 //
 //  Created by José Enrique Sanchez on 1/6/15.
@@ -8,8 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-#import "JESAMoney.h"
+@interface JESAMoney : NSObject
 
-@interface JESAEuro : JESAMoney
+-(id)initWithAmount:(NSUInteger) amount;
+
+-(JESAMoney *) times:(NSUInteger) multiplier;
 
 @end

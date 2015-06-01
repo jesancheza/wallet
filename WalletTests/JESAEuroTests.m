@@ -30,8 +30,19 @@
 - (void)testMultiplication {
     
     JESAEuro *five = [[JESAEuro alloc] initWithAmount:5];
-    [five times: 2];
-    XCTAssertEqual(10, five.amount);
+    JESAEuro *product = [five times: 2];
+    XCTAssertEqualObjects(product, [[JESAEuro alloc] initWithAmount:10]);
+}
+
+-(void) testEquality{
+    JESAEuro *five = [[JESAEuro alloc] initWithAmount:5];
+    JESAEuro *otherFive = [[JESAEuro alloc] initWithAmount:5];
+    
+    XCTAssertEqualObjects(five, otherFive);
+    
+    JESAEuro *seven = [[JESAEuro alloc] initWithAmount:7];
+    
+    XCTAssertNotEqual(seven, five);
 }
 
 @end

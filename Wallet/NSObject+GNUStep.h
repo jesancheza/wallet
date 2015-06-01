@@ -1,5 +1,5 @@
 //
-//  JESAEuro.h
+//  NSObject+NSObject_GNUStep.h
 //  Wallet
 //
 //  Created by José Enrique Sanchez on 1/6/15.
@@ -8,8 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-#import "JESAMoney.h"
-
-@interface JESAEuro : JESAMoney
-
+@interface NSObject (GNUStep)
+-(id) subclassResponsibility: (SEL)aSel;
 @end

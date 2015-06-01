@@ -1,5 +1,5 @@
 //
-//  JESAEuro.h
+//  JESADolar.h
 //  Wallet
 //
 //  Created by José Enrique Sanchez on 1/6/15.
@@ -10,6 +10,6 @@
 
 #import "JESAMoney.h"
 
-@interface JESAEuro : JESAMoney
+@interface JESADolar : JESAMoney
 
 @end

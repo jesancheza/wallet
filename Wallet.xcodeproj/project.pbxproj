@@ -15,6 +15,12 @@
 		EDB49CB21B1CF3B8003288E4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDB49CB01B1CF3B8003288E4 /* LaunchScreen.xib */; };
 		EDB49CC81B1CF55E003288E4 /* JESAEuroTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB49CC71B1CF55E003288E4 /* JESAEuroTests.m */; };
 		EDB49CCC1B1CF66F003288E4 /* JESAEuro.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB49CCB1B1CF66F003288E4 /* JESAEuro.m */; };
+		EDB49CCE1B1D047E003288E4 /* JESADolarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB49CCD1B1D047E003288E4 /* JESADolarTests.m */; };
+		EDB49CD11B1D0520003288E4 /* JESADolar.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB49CD01B1D0520003288E4 /* JESADolar.m */; };
+		EDB49CD41B1D06D5003288E4 /* JESAMoney.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB49CD31B1D06D5003288E4 /* JESAMoney.m */; };
+		EDB49CD51B1D06E7003288E4 /* JESAMoney.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB49CD31B1D06D5003288E4 /* JESAMoney.m */; };
+		EDB49CD81B1D0908003288E4 /* NSObject+GNUStep.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB49CD71B1D0908003288E4 /* NSObject+GNUStep.m */; };
+		EDB49CDB1B1D0B31003288E4 /* JESAMoneyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB49CDA1B1D0B31003288E4 /* JESAMoneyTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +49,14 @@
 		EDB49CC71B1CF55E003288E4 /* JESAEuroTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JESAEuroTests.m; sourceTree = "<group>"; };
 		EDB49CCA1B1CF66F003288E4 /* JESAEuro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JESAEuro.h; sourceTree = "<group>"; };
 		EDB49CCB1B1CF66F003288E4 /* JESAEuro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JESAEuro.m; sourceTree = "<group>"; };
+		EDB49CCD1B1D047E003288E4 /* JESADolarTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JESADolarTests.m; sourceTree = "<group>"; };
+		EDB49CCF1B1D0520003288E4 /* JESADolar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JESADolar.h; sourceTree = "<group>"; };
+		EDB49CD01B1D0520003288E4 /* JESADolar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JESADolar.m; sourceTree = "<group>"; };
+		EDB49CD21B1D06D5003288E4 /* JESAMoney.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JESAMoney.h; sourceTree = "<group>"; };
+		EDB49CD31B1D06D5003288E4 /* JESAMoney.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JESAMoney.m; sourceTree = "<group>"; };
+		EDB49CD61B1D0908003288E4 /* NSObject+GNUStep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+GNUStep.h"; sourceTree = "<group>"; };
+		EDB49CD71B1D0908003288E4 /* NSObject+GNUStep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+GNUStep.m"; sourceTree = "<group>"; };
+		EDB49CDA1B1D0B31003288E4 /* JESAMoneyTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JESAMoneyTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +107,7 @@
 				EDB49CAE1B1CF3B8003288E4 /* Images.xcassets */,
 				EDB49CB01B1CF3B8003288E4 /* LaunchScreen.xib */,
 				EDB49CA11B1CF3B8003288E4 /* Supporting Files */,
+				EDB49CD91B1D092C003288E4 /* Categories */,
 			);
 			path = Wallet;
 			sourceTree = "<group>";
@@ -111,6 +126,8 @@
 			children = (
 				EDB49CBB1B1CF3B8003288E4 /* Supporting Files */,
 				EDB49CC71B1CF55E003288E4 /* JESAEuroTests.m */,
+				EDB49CCD1B1D047E003288E4 /* JESADolarTests.m */,
+				EDB49CDA1B1D0B31003288E4 /* JESAMoneyTests.m */,
 			);
 			path = WalletTests;
 			sourceTree = "<group>";
@@ -128,8 +145,21 @@
 			children = (
 				EDB49CCA1B1CF66F003288E4 /* JESAEuro.h */,
 				EDB49CCB1B1CF66F003288E4 /* JESAEuro.m */,
+				EDB49CCF1B1D0520003288E4 /* JESADolar.h */,
+				EDB49CD01B1D0520003288E4 /* JESADolar.m */,
+				EDB49CD21B1D06D5003288E4 /* JESAMoney.h */,
+				EDB49CD31B1D06D5003288E4 /* JESAMoney.m */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		EDB49CD91B1D092C003288E4 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				EDB49CD61B1D0908003288E4 /* NSObject+GNUStep.h */,
+				EDB49CD71B1D0908003288E4 /* NSObject+GNUStep.m */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,8 +262,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDB49CD81B1D0908003288E4 /* NSObject+GNUStep.m in Sources */,
 				EDB49CAA1B1CF3B8003288E4 /* ViewController.m in Sources */,
+				EDB49CD11B1D0520003288E4 /* JESADolar.m in Sources */,
 				EDB49CA71B1CF3B8003288E4 /* AppDelegate.m in Sources */,
+				EDB49CD41B1D06D5003288E4 /* JESAMoney.m in Sources */,
 				EDB49CA41B1CF3B8003288E4 /* main.m in Sources */,
 				EDB49CCC1B1CF66F003288E4 /* JESAEuro.m in Sources */,
 			);
@@ -243,7 +276,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDB49CD51B1D06E7003288E4 /* JESAMoney.m in Sources */,
+				EDB49CDB1B1D0B31003288E4 /* JESAMoneyTests.m in Sources */,
 				EDB49CC81B1CF55E003288E4 /* JESAEuroTests.m in Sources */,
+				EDB49CCE1B1D047E003288E4 /* JESADolarTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

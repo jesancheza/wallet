@@ -1,18 +1,19 @@
 //
-//  JESAEuro.m
+//  JESADolar.m
 //  Wallet
 //
 //  Created by José Enrique Sanchez on 1/6/15.
 //  Copyright (c) 2015 Devappify. All rights reserved.
 //
 
-#import "JESAEuro.h"
+#import "JESADolar.h"
 
-@interface JESAEuro()
+
+@interface JESADolar ()
 @property (nonatomic, readonly) NSUInteger amount;
 @end
 
-@implementation JESAEuro
+@implementation JESADolar
 
 -(id)initWithAmount:(NSUInteger) amount{
     
@@ -24,7 +25,7 @@
 }
 
 -(JESAMoney *) times:(NSUInteger) multiplier{
-    return [[JESAEuro alloc] initWithAmount:self.amount * multiplier];
+    return [[JESADolar alloc] initWithAmount:self.amount * multiplier];
 }
 
 
