@@ -10,14 +10,29 @@
 
 #import "NSObject+GNUStep.h"
 
+@interface JESAMoney ()
+@property (nonatomic, readonly) NSUInteger amount;
+@end
+
 @implementation JESAMoney
 
--(id) initWithAmount:(NSUInteger)amount{
-    return [self subclassResponsibility:_cmd];
+-(id)initWithAmount:(NSUInteger) amount{
+    
+    if (self = [super init]) {
+        _amount = amount;
+    }
+    
+    return self;
 }
 
--(JESAMoney *) times:(NSUInteger)multiplier{
-    return [self subclassResponsibility:_cmd];
+-(JESAMoney *) times:(NSUInteger) multiplier{
+    return [[JESAMoney alloc]
+            initWithAmount:self.amount * multiplier];
+}
+
+#pragma mark - Equality
+-(BOOL)isEqual:(id)object{
+    return self.amount == [object amount];
 }
 
 @end

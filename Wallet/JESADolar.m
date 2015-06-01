@@ -7,31 +7,10 @@
 //
 
 #import "JESADolar.h"
-
-
-@interface JESADolar ()
-@property (nonatomic, readonly) NSUInteger amount;
-@end
+#import "JESAMoneyPrivate.h"
 
 @implementation JESADolar
 
--(id)initWithAmount:(NSUInteger) amount{
-    
-    if (self = [super init]) {
-        _amount = amount;
-    }
-    
-    return self;
-}
 
--(JESAMoney *) times:(NSUInteger) multiplier{
-    return [[JESADolar alloc] initWithAmount:self.amount * multiplier];
-}
-
-
-#pragma mark - Equality
--(BOOL)isEqual:(id)object{
-    return self.amount == [object amount];
-}
 
 @end

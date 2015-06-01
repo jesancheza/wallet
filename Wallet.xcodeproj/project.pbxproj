@@ -57,6 +57,7 @@
 		EDB49CD61B1D0908003288E4 /* NSObject+GNUStep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+GNUStep.h"; sourceTree = "<group>"; };
 		EDB49CD71B1D0908003288E4 /* NSObject+GNUStep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+GNUStep.m"; sourceTree = "<group>"; };
 		EDB49CDA1B1D0B31003288E4 /* JESAMoneyTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JESAMoneyTests.m; sourceTree = "<group>"; };
+		EDB49CDC1B1D0D1F003288E4 /* JESAMoneyPrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JESAMoneyPrivate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +150,7 @@
 				EDB49CD01B1D0520003288E4 /* JESADolar.m */,
 				EDB49CD21B1D06D5003288E4 /* JESAMoney.h */,
 				EDB49CD31B1D06D5003288E4 /* JESAMoney.m */,
+				EDB49CDC1B1D0D1F003288E4 /* JESAMoneyPrivate.h */,
 			);
 			name = Models;
 			sourceTree = "<group>";
