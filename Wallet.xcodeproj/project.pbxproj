@@ -13,7 +13,8 @@
 		EDB49CAD1B1CF3B8003288E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDB49CAB1B1CF3B8003288E4 /* Main.storyboard */; };
 		EDB49CAF1B1CF3B8003288E4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDB49CAE1B1CF3B8003288E4 /* Images.xcassets */; };
 		EDB49CB21B1CF3B8003288E4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDB49CB01B1CF3B8003288E4 /* LaunchScreen.xib */; };
-		EDB49CBE1B1CF3B8003288E4 /* WalletTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB49CBD1B1CF3B8003288E4 /* WalletTests.m */; };
+		EDB49CC81B1CF55E003288E4 /* JESAEuroTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB49CC71B1CF55E003288E4 /* JESAEuroTests.m */; };
+		EDB49CCC1B1CF66F003288E4 /* JESAEuro.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB49CCB1B1CF66F003288E4 /* JESAEuro.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +40,9 @@
 		EDB49CB11B1CF3B8003288E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		EDB49CB71B1CF3B8003288E4 /* WalletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WalletTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDB49CBC1B1CF3B8003288E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EDB49CBD1B1CF3B8003288E4 /* WalletTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WalletTests.m; sourceTree = "<group>"; };
+		EDB49CC71B1CF55E003288E4 /* JESAEuroTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JESAEuroTests.m; sourceTree = "<group>"; };
+		EDB49CCA1B1CF66F003288E4 /* JESAEuro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JESAEuro.h; sourceTree = "<group>"; };
+		EDB49CCB1B1CF66F003288E4 /* JESAEuro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JESAEuro.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,7 @@
 		EDB49CA01B1CF3B8003288E4 /* Wallet */ = {
 			isa = PBXGroup;
 			children = (
+				EDB49CC91B1CF653003288E4 /* Models */,
 				EDB49CA51B1CF3B8003288E4 /* AppDelegate.h */,
 				EDB49CA61B1CF3B8003288E4 /* AppDelegate.m */,
 				EDB49CA81B1CF3B8003288E4 /* ViewController.h */,
@@ -105,8 +109,8 @@
 		EDB49CBA1B1CF3B8003288E4 /* WalletTests */ = {
 			isa = PBXGroup;
 			children = (
-				EDB49CBD1B1CF3B8003288E4 /* WalletTests.m */,
 				EDB49CBB1B1CF3B8003288E4 /* Supporting Files */,
+				EDB49CC71B1CF55E003288E4 /* JESAEuroTests.m */,
 			);
 			path = WalletTests;
 			sourceTree = "<group>";
@@ -117,6 +121,15 @@
 				EDB49CBC1B1CF3B8003288E4 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EDB49CC91B1CF653003288E4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EDB49CCA1B1CF66F003288E4 /* JESAEuro.h */,
+				EDB49CCB1B1CF66F003288E4 /* JESAEuro.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +235,7 @@
 				EDB49CAA1B1CF3B8003288E4 /* ViewController.m in Sources */,
 				EDB49CA71B1CF3B8003288E4 /* AppDelegate.m in Sources */,
 				EDB49CA41B1CF3B8003288E4 /* main.m in Sources */,
+				EDB49CCC1B1CF66F003288E4 /* JESAEuro.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,7 +243,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDB49CBE1B1CF3B8003288E4 /* WalletTests.m in Sources */,
+				EDB49CC81B1CF55E003288E4 /* JESAEuroTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
