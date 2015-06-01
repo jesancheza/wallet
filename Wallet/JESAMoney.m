@@ -8,8 +8,6 @@
 
 #import "JESAMoney.h"
 
-#import "NSObject+GNUStep.h"
-
 @interface JESAMoney ()
 @property (nonatomic, readonly) NSUInteger amount;
 @end

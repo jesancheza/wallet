@@ -15,7 +15,6 @@
 		EDB49CB21B1CF3B8003288E4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDB49CB01B1CF3B8003288E4 /* LaunchScreen.xib */; };
 		EDB49CD41B1D06D5003288E4 /* JESAMoney.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB49CD31B1D06D5003288E4 /* JESAMoney.m */; };
 		EDB49CD51B1D06E7003288E4 /* JESAMoney.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB49CD31B1D06D5003288E4 /* JESAMoney.m */; };
-		EDB49CD81B1D0908003288E4 /* NSObject+GNUStep.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB49CD71B1D0908003288E4 /* NSObject+GNUStep.m */; };
 		EDB49CDB1B1D0B31003288E4 /* JESAMoneyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB49CDA1B1D0B31003288E4 /* JESAMoneyTests.m */; };
 /* End PBXBuildFile section */
 
@@ -44,10 +43,7 @@
 		EDB49CBC1B1CF3B8003288E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDB49CD21B1D06D5003288E4 /* JESAMoney.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JESAMoney.h; sourceTree = "<group>"; };
 		EDB49CD31B1D06D5003288E4 /* JESAMoney.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JESAMoney.m; sourceTree = "<group>"; };
-		EDB49CD61B1D0908003288E4 /* NSObject+GNUStep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+GNUStep.h"; sourceTree = "<group>"; };
-		EDB49CD71B1D0908003288E4 /* NSObject+GNUStep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+GNUStep.m"; sourceTree = "<group>"; };
 		EDB49CDA1B1D0B31003288E4 /* JESAMoneyTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JESAMoneyTests.m; sourceTree = "<group>"; };
-		EDB49CDC1B1D0D1F003288E4 /* JESAMoneyPrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JESAMoneyPrivate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,7 +130,6 @@
 			children = (
 				EDB49CD21B1D06D5003288E4 /* JESAMoney.h */,
 				EDB49CD31B1D06D5003288E4 /* JESAMoney.m */,
-				EDB49CDC1B1D0D1F003288E4 /* JESAMoneyPrivate.h */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -142,8 +137,6 @@
 		EDB49CD91B1D092C003288E4 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				EDB49CD61B1D0908003288E4 /* NSObject+GNUStep.h */,
-				EDB49CD71B1D0908003288E4 /* NSObject+GNUStep.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -248,7 +241,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDB49CD81B1D0908003288E4 /* NSObject+GNUStep.m in Sources */,
 				EDB49CAA1B1CF3B8003288E4 /* ViewController.m in Sources */,
 				EDB49CA71B1CF3B8003288E4 /* AppDelegate.m in Sources */,
 				EDB49CD41B1D06D5003288E4 /* JESAMoney.m in Sources */,
