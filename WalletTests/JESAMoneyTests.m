@@ -67,4 +67,11 @@
     XCTAssertNotEqual(seven, five);
 }
 
+-(void) testHash{
+    JESAMoney *a = [JESAMoney euroWithAmount:2];
+    JESAMoney *b = [JESAMoney euroWithAmount:2];
+    
+    XCTAssertEqual([a hash], [b hash], @"Equal objects must have same hash");
+}
+
 @end

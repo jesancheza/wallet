@@ -51,4 +51,15 @@
     return self.amount == [object amount];
 }
 
+#pragma mark - Overwritten
+-(NSString *) description{
+    
+    return [NSString stringWithFormat:@"<%@ %ld",
+            [self class], (long)[self amount]];
+}
+
+-(NSUInteger) hash{
+    return (NSUInteger) self.amount;
+}
+
 @end
