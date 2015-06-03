@@ -42,13 +42,20 @@
 }
 
 -(JESAMoney *) times:(NSUInteger) multiplier{
-    return [JESAMoney
-            euroWithAmount:[self.amount integerValue] * multiplier];
+    return [[JESAMoney alloc]
+            initWithAmount:[self.amount integerValue] *
+            multiplier currency:self.currency];
 }
 
 #pragma mark - Equality
 -(BOOL)isEqual:(id)object{
-    return self.amount == [object amount];
+    
+    if ([self.currency isEqual:[object currency] ]) {
+        return self.amount == [object amount];
+    }else{
+        return NO;
+    }
+    
 }
 
 #pragma mark - Overwritten

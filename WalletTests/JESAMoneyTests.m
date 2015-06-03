@@ -67,11 +67,23 @@
     XCTAssertNotEqual(seven, five);
 }
 
+-(void) testDifferentCurrenies{
+    
+    JESAMoney *euro = [JESAMoney euroWithAmount:1];
+    JESAMoney *dollar = [JESAMoney dollarWithAmount:1];
+    
+    XCTAssertNotEqualObjects(euro, dollar, @"Different currecies should not be equal!");
+}
+
 -(void) testHash{
     JESAMoney *a = [JESAMoney euroWithAmount:2];
     JESAMoney *b = [JESAMoney euroWithAmount:2];
     
+    JESAMoney *c = [JESAMoney dollarWithAmount:2];
+    JESAMoney *d = [JESAMoney dollarWithAmount:2];
+    
     XCTAssertEqual([a hash], [b hash], @"Equal objects must have same hash");
+    XCTAssertEqual([c hash], [d hash], @"Equal objects must have same hash");
 }
 
 -(void) testAmountStorage{
