@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C69F52291B1F9ECB00754F98 /* JESABrokerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C69F52281B1F9ECB00754F98 /* JESABrokerTests.m */; };
+		C69F522C1B1F9FC500754F98 /* JESABroker.m in Sources */ = {isa = PBXBuildFile; fileRef = C69F522B1B1F9FC500754F98 /* JESABroker.m */; };
+		C69F522D1B1F9FC500754F98 /* JESABroker.m in Sources */ = {isa = PBXBuildFile; fileRef = C69F522B1B1F9FC500754F98 /* JESABroker.m */; };
 		EDB49CA41B1CF3B8003288E4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB49CA31B1CF3B8003288E4 /* main.m */; };
 		EDB49CA71B1CF3B8003288E4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB49CA61B1CF3B8003288E4 /* AppDelegate.m */; };
 		EDB49CAA1B1CF3B8003288E4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB49CA91B1CF3B8003288E4 /* ViewController.m */; };
@@ -29,6 +32,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C69F52281B1F9ECB00754F98 /* JESABrokerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JESABrokerTests.m; sourceTree = "<group>"; };
+		C69F522A1B1F9FC500754F98 /* JESABroker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JESABroker.h; sourceTree = "<group>"; };
+		C69F522B1B1F9FC500754F98 /* JESABroker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JESABroker.m; sourceTree = "<group>"; };
 		EDB49C9E1B1CF3B7003288E4 /* Wallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDB49CA21B1CF3B8003288E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDB49CA31B1CF3B8003288E4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -121,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				EDB49CBC1B1CF3B8003288E4 /* Info.plist */,
+				C69F52281B1F9ECB00754F98 /* JESABrokerTests.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -130,6 +137,8 @@
 			children = (
 				EDB49CD21B1D06D5003288E4 /* JESAMoney.h */,
 				EDB49CD31B1D06D5003288E4 /* JESAMoney.m */,
+				C69F522A1B1F9FC500754F98 /* JESABroker.h */,
+				C69F522B1B1F9FC500754F98 /* JESABroker.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -241,6 +250,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C69F522C1B1F9FC500754F98 /* JESABroker.m in Sources */,
 				EDB49CAA1B1CF3B8003288E4 /* ViewController.m in Sources */,
 				EDB49CA71B1CF3B8003288E4 /* AppDelegate.m in Sources */,
 				EDB49CD41B1D06D5003288E4 /* JESAMoney.m in Sources */,
@@ -254,6 +264,8 @@
 			files = (
 				EDB49CD51B1D06E7003288E4 /* JESAMoney.m in Sources */,
 				EDB49CDB1B1D0B31003288E4 /* JESAMoneyTests.m in Sources */,
+				C69F52291B1F9ECB00754F98 /* JESABrokerTests.m in Sources */,
+				C69F522D1B1F9FC500754F98 /* JESABroker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +452,7 @@
 				EDB49CC31B1CF3B8003288E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EDB49CC41B1CF3B8003288E4 /* Build configuration list for PBXNativeTarget "WalletTests" */ = {
 			isa = XCConfigurationList;
@@ -448,6 +461,7 @@
 				EDB49CC61B1CF3B8003288E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
