@@ -47,6 +47,14 @@
             multiplier currency:self.currency];
 }
 
+-(JESAMoney *) plus:(JESAMoney *) other{
+    
+    NSUInteger totalAmount = [self.amount integerValue] + [other.amount integerValue];
+    JESAMoney *total = [[JESAMoney alloc] initWithAmount:totalAmount currency:self.currency];
+    
+    return total;
+}
+
 #pragma mark - Equality
 -(BOOL)isEqual:(id)object{
     

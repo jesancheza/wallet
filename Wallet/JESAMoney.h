@@ -19,5 +19,6 @@
            currency:(NSString *) currency;
 
 -(JESAMoney *) times:(NSUInteger) multiplier;
+-(JESAMoney *) plus:(JESAMoney *) other;
 
 @end

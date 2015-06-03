@@ -101,4 +101,11 @@
 #pragma clang diagnostic pop
 }
 
+-(void) testSimpleAddition{
+    XCTAssertEqualObjects([[JESAMoney dollarWithAmount:5] plus:
+                              [JESAMoney dollarWithAmount:5]],
+                             [JESAMoney dollarWithAmount:10],
+                             @"$5 + 5$ = 10$");
+}
+
 @end
