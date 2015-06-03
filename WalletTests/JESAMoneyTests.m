@@ -74,4 +74,19 @@
     XCTAssertEqual([a hash], [b hash], @"Equal objects must have same hash");
 }
 
+-(void) testAmountStorage{
+    
+    JESAMoney *euro = [JESAMoney euroWithAmount:2];
+    JESAMoney *dollar = [JESAMoney dollarWithAmount:4];
+    
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wundeclared-selector"
+    
+    XCTAssertEqual(2, [[euro performSelector:@selector(amount)]integerValue],@"The value retrieved should be the same as the store");
+    
+    XCTAssertEqual(4, [[dollar performSelector:@selector(amount)]integerValue],@"The value retrieved should be the same as the store");
+    
+#pragma clang diagnostic pop
+}
+
 @end

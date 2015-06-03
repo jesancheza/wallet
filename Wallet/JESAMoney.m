@@ -9,7 +9,7 @@
 #import "JESAMoney.h"
 
 @interface JESAMoney ()
-@property (nonatomic, readonly) NSUInteger amount;
+@property (nonatomic, strong, readonly) NSNumber *amount;
 @end
 
 @implementation JESAMoney
@@ -34,7 +34,7 @@
            currency:(NSString *)currency{
     
     if (self = [super init]) {
-        _amount = amount;
+        _amount = @(amount);
         _currency = currency;
     }
     
@@ -43,7 +43,7 @@
 
 -(JESAMoney *) times:(NSUInteger) multiplier{
     return [JESAMoney
-            euroWithAmount:self.amount * multiplier];
+            euroWithAmount:[self.amount integerValue] * multiplier];
 }
 
 #pragma mark - Equality
