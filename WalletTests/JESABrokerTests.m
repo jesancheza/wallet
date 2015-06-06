@@ -38,4 +38,18 @@
     XCTAssertEqualObjects(sum, reduced, @"Conversion to same currency should be a NOP");
 }
 
+-(void) testReduction{
+    
+    JESABroker *broker = [JESABroker new];
+    [broker addRate: 2 fromCurrency:@"USD" toCurrency: @"EUR"];
+    
+    
+    JESAMoney *dollar = [JESAMoney dollarWithAmount:10];
+    JESAMoney *euro = [JESAMoney euroWithAmount:5];
+    
+    JESAMoney *converted = [broker reduce:dollar toCurrency:@"EUR"];
+    
+    XCTAssertEqualObjects(converted, euro,@"$10 != €5 * 2");
+}
+
 @end

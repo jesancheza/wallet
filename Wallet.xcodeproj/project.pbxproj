@@ -119,6 +119,7 @@
 			children = (
 				EDB49CBB1B1CF3B8003288E4 /* Supporting Files */,
 				EDB49CDA1B1D0B31003288E4 /* JESAMoneyTests.m */,
+				C69F52281B1F9ECB00754F98 /* JESABrokerTests.m */,
 			);
 			path = WalletTests;
 			sourceTree = "<group>";
@@ -127,7 +128,6 @@
 			isa = PBXGroup;
 			children = (
 				EDB49CBC1B1CF3B8003288E4 /* Info.plist */,
-				C69F52281B1F9ECB00754F98 /* JESABrokerTests.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";

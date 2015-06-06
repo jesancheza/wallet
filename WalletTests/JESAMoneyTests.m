@@ -108,4 +108,20 @@
                              @"$5 + 5$ = 10$");
 }
 
+-(void) testThatHashIsAmount{
+    
+    JESAMoney *one = [JESAMoney dollarWithAmount:1];
+    
+    XCTAssertEqual([one hash], 1,@"The hash must be the same as the amount");
+}
+
+-(void) testDescription{
+    
+    JESAMoney *one = [JESAMoney dollarWithAmount:1];
+    
+    NSString *desc = @"<JESAMoney: USD 1>";
+    
+    XCTAssertEqualObjects(desc, [one description],@"Description must match template ");
+}
+
 @end
