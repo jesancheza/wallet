@@ -13,6 +13,11 @@
 		C69F522F1B248F3200754F98 /* JESAWalletTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C69F522E1B248F3200754F98 /* JESAWalletTests.m */; };
 		C69F52321B2491DA00754F98 /* JESAWallet.m in Sources */ = {isa = PBXBuildFile; fileRef = C69F52311B2491DA00754F98 /* JESAWallet.m */; };
 		C69F52331B2491DA00754F98 /* JESAWallet.m in Sources */ = {isa = PBXBuildFile; fileRef = C69F52311B2491DA00754F98 /* JESAWallet.m */; };
+		C69F52381B24AED400754F98 /* JESASimpleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C69F52361B24AED400754F98 /* JESASimpleViewController.m */; };
+		C69F52391B24AED400754F98 /* JESASimpleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C69F52361B24AED400754F98 /* JESASimpleViewController.m */; };
+		C69F523A1B24AED400754F98 /* JESASimpleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C69F52371B24AED400754F98 /* JESASimpleViewController.xib */; };
+		C69F523B1B24AED400754F98 /* JESASimpleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C69F52371B24AED400754F98 /* JESASimpleViewController.xib */; };
+		C69F523F1B24AF5E00754F98 /* JESAControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C69F523E1B24AF5E00754F98 /* JESAControllerTests.m */; };
 		EDB49CA41B1CF3B8003288E4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB49CA31B1CF3B8003288E4 /* main.m */; };
 		EDB49CA71B1CF3B8003288E4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB49CA61B1CF3B8003288E4 /* AppDelegate.m */; };
 		EDB49CAA1B1CF3B8003288E4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB49CA91B1CF3B8003288E4 /* ViewController.m */; };
@@ -41,6 +46,10 @@
 		C69F522E1B248F3200754F98 /* JESAWalletTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JESAWalletTests.m; sourceTree = "<group>"; };
 		C69F52301B2491DA00754F98 /* JESAWallet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JESAWallet.h; sourceTree = "<group>"; };
 		C69F52311B2491DA00754F98 /* JESAWallet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JESAWallet.m; sourceTree = "<group>"; };
+		C69F52351B24AED400754F98 /* JESASimpleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JESASimpleViewController.h; sourceTree = "<group>"; };
+		C69F52361B24AED400754F98 /* JESASimpleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JESASimpleViewController.m; sourceTree = "<group>"; };
+		C69F52371B24AED400754F98 /* JESASimpleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JESASimpleViewController.xib; sourceTree = "<group>"; };
+		C69F523E1B24AF5E00754F98 /* JESAControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JESAControllerTests.m; sourceTree = "<group>"; };
 		EDB49C9E1B1CF3B7003288E4 /* Wallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDB49CA21B1CF3B8003288E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDB49CA31B1CF3B8003288E4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -76,6 +85,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C69F52341B24ADEF00754F98 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C69F52351B24AED400754F98 /* JESASimpleViewController.h */,
+				C69F52361B24AED400754F98 /* JESASimpleViewController.m */,
+				C69F52371B24AED400754F98 /* JESASimpleViewController.xib */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		C69F523C1B24AF2500754F98 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EDB49CDA1B1D0B31003288E4 /* JESAMoneyTests.m */,
+				C69F52281B1F9ECB00754F98 /* JESABrokerTests.m */,
+				C69F522E1B248F3200754F98 /* JESAWalletTests.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		C69F523D1B24AF3500754F98 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C69F523E1B24AF5E00754F98 /* JESAControllerTests.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		EDB49C951B1CF3B7003288E4 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +134,7 @@
 		EDB49CA01B1CF3B8003288E4 /* Wallet */ = {
 			isa = PBXGroup;
 			children = (
+				C69F52341B24ADEF00754F98 /* Controllers */,
 				EDB49CC91B1CF653003288E4 /* Models */,
 				EDB49CA51B1CF3B8003288E4 /* AppDelegate.h */,
 				EDB49CA61B1CF3B8003288E4 /* AppDelegate.m */,
@@ -123,10 +161,9 @@
 		EDB49CBA1B1CF3B8003288E4 /* WalletTests */ = {
 			isa = PBXGroup;
 			children = (
+				C69F523D1B24AF3500754F98 /* Controllers */,
+				C69F523C1B24AF2500754F98 /* Models */,
 				EDB49CBB1B1CF3B8003288E4 /* Supporting Files */,
-				EDB49CDA1B1D0B31003288E4 /* JESAMoneyTests.m */,
-				C69F52281B1F9ECB00754F98 /* JESABrokerTests.m */,
-				C69F522E1B248F3200754F98 /* JESAWalletTests.m */,
 			);
 			path = WalletTests;
 			sourceTree = "<group>";
@@ -240,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDB49CAD1B1CF3B8003288E4 /* Main.storyboard in Resources */,
+				C69F523A1B24AED400754F98 /* JESASimpleViewController.xib in Resources */,
 				EDB49CB21B1CF3B8003288E4 /* LaunchScreen.xib in Resources */,
 				EDB49CAF1B1CF3B8003288E4 /* Images.xcassets in Resources */,
 			);
@@ -249,6 +287,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C69F523B1B24AED400754F98 /* JESASimpleViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +304,7 @@
 				C69F52321B2491DA00754F98 /* JESAWallet.m in Sources */,
 				EDB49CD41B1D06D5003288E4 /* JESAMoney.m in Sources */,
 				EDB49CA41B1CF3B8003288E4 /* main.m in Sources */,
+				C69F52381B24AED400754F98 /* JESASimpleViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,10 +314,12 @@
 			files = (
 				EDB49CD51B1D06E7003288E4 /* JESAMoney.m in Sources */,
 				EDB49CDB1B1D0B31003288E4 /* JESAMoneyTests.m in Sources */,
+				C69F523F1B24AF5E00754F98 /* JESAControllerTests.m in Sources */,
 				C69F522F1B248F3200754F98 /* JESAWalletTests.m in Sources */,
 				C69F52331B2491DA00754F98 /* JESAWallet.m in Sources */,
 				C69F52291B1F9ECB00754F98 /* JESABrokerTests.m in Sources */,
 				C69F522D1B1F9FC500754F98 /* JESABroker.m in Sources */,
+				C69F52391B24AED400754F98 /* JESASimpleViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
