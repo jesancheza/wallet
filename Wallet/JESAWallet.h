@@ -11,4 +11,6 @@
 
 @interface JESAWallet : NSObject<JESAMoney>
 
+@property (nonatomic, readonly) NSUInteger count;
+
 @end

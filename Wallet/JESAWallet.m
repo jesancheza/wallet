@@ -15,6 +15,10 @@
 
 @implementation JESAWallet
 
+-(NSUInteger) count{
+    return [self.moneys count];
+}
+
 -(id) initWithAmount:(NSUInteger) amount currency:(NSString *) currency{
     
     if (self = [super init]) {

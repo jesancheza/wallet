@@ -18,6 +18,8 @@
 		C69F523A1B24AED400754F98 /* JESASimpleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C69F52371B24AED400754F98 /* JESASimpleViewController.xib */; };
 		C69F523B1B24AED400754F98 /* JESASimpleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C69F52371B24AED400754F98 /* JESASimpleViewController.xib */; };
 		C69F523F1B24AF5E00754F98 /* JESAControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C69F523E1B24AF5E00754F98 /* JESAControllerTests.m */; };
+		C69F52421B24B8A000754F98 /* JESAWalletTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C69F52411B24B8A000754F98 /* JESAWalletTableViewController.m */; };
+		C69F52431B24B8A000754F98 /* JESAWalletTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C69F52411B24B8A000754F98 /* JESAWalletTableViewController.m */; };
 		EDB49CA41B1CF3B8003288E4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB49CA31B1CF3B8003288E4 /* main.m */; };
 		EDB49CA71B1CF3B8003288E4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB49CA61B1CF3B8003288E4 /* AppDelegate.m */; };
 		EDB49CAA1B1CF3B8003288E4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB49CA91B1CF3B8003288E4 /* ViewController.m */; };
@@ -50,6 +52,8 @@
 		C69F52361B24AED400754F98 /* JESASimpleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JESASimpleViewController.m; sourceTree = "<group>"; };
 		C69F52371B24AED400754F98 /* JESASimpleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JESASimpleViewController.xib; sourceTree = "<group>"; };
 		C69F523E1B24AF5E00754F98 /* JESAControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JESAControllerTests.m; sourceTree = "<group>"; };
+		C69F52401B24B8A000754F98 /* JESAWalletTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JESAWalletTableViewController.h; sourceTree = "<group>"; };
+		C69F52411B24B8A000754F98 /* JESAWalletTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JESAWalletTableViewController.m; sourceTree = "<group>"; };
 		EDB49C9E1B1CF3B7003288E4 /* Wallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDB49CA21B1CF3B8003288E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDB49CA31B1CF3B8003288E4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -91,6 +95,8 @@
 				C69F52351B24AED400754F98 /* JESASimpleViewController.h */,
 				C69F52361B24AED400754F98 /* JESASimpleViewController.m */,
 				C69F52371B24AED400754F98 /* JESASimpleViewController.xib */,
+				C69F52401B24B8A000754F98 /* JESAWalletTableViewController.h */,
+				C69F52411B24B8A000754F98 /* JESAWalletTableViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -303,6 +309,7 @@
 				EDB49CA71B1CF3B8003288E4 /* AppDelegate.m in Sources */,
 				C69F52321B2491DA00754F98 /* JESAWallet.m in Sources */,
 				EDB49CD41B1D06D5003288E4 /* JESAMoney.m in Sources */,
+				C69F52421B24B8A000754F98 /* JESAWalletTableViewController.m in Sources */,
 				EDB49CA41B1CF3B8003288E4 /* main.m in Sources */,
 				C69F52381B24AED400754F98 /* JESASimpleViewController.m in Sources */,
 			);
@@ -318,6 +325,7 @@
 				C69F522F1B248F3200754F98 /* JESAWalletTests.m in Sources */,
 				C69F52331B2491DA00754F98 /* JESAWallet.m in Sources */,
 				C69F52291B1F9ECB00754F98 /* JESABrokerTests.m in Sources */,
+				C69F52431B24B8A000754F98 /* JESAWalletTableViewController.m in Sources */,
 				C69F522D1B1F9FC500754F98 /* JESABroker.m in Sources */,
 				C69F52391B24AED400754F98 /* JESASimpleViewController.m in Sources */,
 			);
