@@ -79,4 +79,15 @@
     XCTAssertEqual(numberdollars, 2, @"$1 + €1 + $5 = 2 moneys dollar");
 }
 
+-(void) testTakeMoney{
+    
+    JESAWallet *wallet = [[JESAWallet alloc] initWithAmount:5 currency:@"USD"];
+    [wallet plus:[JESAMoney euroWithAmount:4]];
+    [wallet plus:[JESAMoney dollarWithAmount:3]];
+    
+    [wallet takeMoney:[JESAMoney dollarWithAmount:3]];
+    
+    XCTAssertEqual([wallet count], 2, @"");
+}
+
 @end

@@ -17,4 +17,6 @@
 -(NSUInteger) countEuros;
 -(NSUInteger) countDollars;
 
+-(JESAWallet *) takeMoney:(JESAMoney *) money;
+
 @end

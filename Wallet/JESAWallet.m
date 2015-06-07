@@ -84,4 +84,12 @@
     return [[self.moneys filteredArrayUsingPredicate:filterDollars] count];
 }
 
+-(JESAWallet *) takeMoney:(JESAMoney *) money{
+    
+    NSUInteger index = [self.moneys indexOfObject:money];
+    [self.moneys removeObjectAtIndex:index];
+    
+    return self;
+}
+
 @end
