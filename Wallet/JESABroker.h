@@ -7,12 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
-@class JESAMoney;
+#import "JESAMoney.h"
 
 @interface JESABroker : NSObject
 
--(JESAMoney *) reduce:(JESAMoney *) money toCurrency:(NSString *) currency;
+@property (nonatomic, strong) NSMutableDictionary *rates;
+
+-(id<JESAMoney>) reduce:(id<JESAMoney>) money toCurrency:(NSString *) currency;
+
 -(void) addRate:(NSInteger) rate
    fromCurrency:(NSString *) fromCurrency
      toCurrency:(NSString *) toCurrency;
+
+-(NSString *) keyFromCurrency:(NSString *) fromCurrency
+                   toCurrency:(NSString *) toCurrency;
 @end

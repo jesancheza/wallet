@@ -7,18 +7,30 @@
 //
 
 #import <Foundation/Foundation.h>
+@class JESAMoney;
+@class JESABroker;
 
-@interface JESAMoney : NSObject
+@protocol JESAMoney <NSObject>
 
+-(id)initWithAmount:(NSUInteger) amount
+           currency:(NSString *) currency;
+
+-(id<JESAMoney>) times:(NSUInteger) multiplier;
+-(id<JESAMoney>) plus:(JESAMoney *) other;
+
+-(id<JESAMoney>) reduceToCurrency:(NSString *) currency
+                       withBroker:(JESABroker *) broker;
+
+@end
+
+@interface JESAMoney : NSObject<JESAMoney>
+
+@property (nonatomic, strong, readonly) NSNumber *amount;
 @property (copy, readonly) NSString *currency;
 
 +(instancetype) dollarWithAmount:(NSUInteger) amount;
 +(instancetype) euroWithAmount:(NSUInteger) amount;
 
--(id)initWithAmount:(NSUInteger) amount
-           currency:(NSString *) currency;
 
--(JESAMoney *) times:(NSUInteger) multiplier;
--(JESAMoney *) plus:(JESAMoney *) other;
 
 @end

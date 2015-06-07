@@ -1,4 +1,4 @@
-//
+    //
 //  JESABroker.m
 //  Wallet
 //
@@ -10,7 +10,7 @@
 #import "JESAMoney.h"
 
 @interface JESABroker ()
-@property (nonatomic, strong) NSMutableDictionary *rates;
+
 @end
 
 @implementation JESABroker
@@ -23,10 +23,13 @@
     return self;
 }
 
--(JESAMoney *) reduce:(JESAMoney *) money
+-(id<JESAMoney>) reduce:(id<JESAMoney>) money
            toCurrency:(NSString *) currency{
     
-    return money;
+    // double dispatch
+    return [money reduceToCurrency:currency
+                        withBroker:self];
+    
 }
 
 -(void) addRate:(NSInteger) rate
@@ -34,8 +37,13 @@
      toCurrency:(NSString *) toCurrency{
  
     [self.rates setObject:@(rate)
-                   forKey:[self keyFromCurrency:fromCurrency toCurrency:toCurrency]];
+                   forKey:[self keyFromCurrency:fromCurrency
+                                     toCurrency:toCurrency]];
     
+    NSNumber *invRate = @(1.0/rate);
+    [self.rates setObject:invRate
+                   forKey:[self keyFromCurrency:toCurrency
+                                     toCurrency:fromCurrency]];
     
 }
 

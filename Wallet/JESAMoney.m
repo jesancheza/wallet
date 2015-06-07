@@ -7,9 +7,10 @@
 //
 
 #import "JESAMoney.h"
+#import "JESABroker.h"
 
 @interface JESAMoney ()
-@property (nonatomic, strong, readonly) NSNumber *amount;
+@property (nonatomic, strong) NSNumber *amount;
 @end
 
 @implementation JESAMoney
@@ -41,18 +42,44 @@
     return self;
 }
 
--(JESAMoney *) times:(NSUInteger) multiplier{
+-(id<JESAMoney>) times:(NSUInteger) multiplier{
     return [[JESAMoney alloc]
             initWithAmount:[self.amount integerValue] *
             multiplier currency:self.currency];
 }
 
--(JESAMoney *) plus:(JESAMoney *) other{
+-(id<JESAMoney>) plus:(JESAMoney *) other{
     
     NSUInteger totalAmount = [self.amount integerValue] + [other.amount integerValue];
     JESAMoney *total = [[JESAMoney alloc] initWithAmount:totalAmount currency:self.currency];
     
     return total;
+}
+
+-(id<JESAMoney>) reduceToCurrency:(NSString *) currency
+                       withBroker:(JESABroker *) broker{
+    
+    JESAMoney *result;
+    double rate = [[broker.rates objectForKey:[broker keyFromCurrency:self.currency
+                                                           toCurrency:currency]] doubleValue];
+    
+    // Comprobamos que divisa de origen y destino sean las mismas
+    if ([self.currency isEqual:currency]) {
+        result = self;
+    }else if (rate == 0){
+        // NO hay tasa de conversión, lanzamos excepción
+        [NSException  raise:@"NoConversionRateException"
+                     format:@"Must have a conversion from %@ to %@", self.currency, currency];
+    }else{
+        
+        NSInteger newAmount = [self.amount integerValue] * rate;
+        
+        result = [[JESAMoney alloc] initWithAmount:newAmount
+                                          currency:currency];
+    }
+    
+    return result;
+    
 }
 
 #pragma mark - Equality

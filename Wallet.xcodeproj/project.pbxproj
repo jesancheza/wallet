@@ -10,6 +10,9 @@
 		C69F52291B1F9ECB00754F98 /* JESABrokerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C69F52281B1F9ECB00754F98 /* JESABrokerTests.m */; };
 		C69F522C1B1F9FC500754F98 /* JESABroker.m in Sources */ = {isa = PBXBuildFile; fileRef = C69F522B1B1F9FC500754F98 /* JESABroker.m */; };
 		C69F522D1B1F9FC500754F98 /* JESABroker.m in Sources */ = {isa = PBXBuildFile; fileRef = C69F522B1B1F9FC500754F98 /* JESABroker.m */; };
+		C69F522F1B248F3200754F98 /* JESAWalletTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C69F522E1B248F3200754F98 /* JESAWalletTests.m */; };
+		C69F52321B2491DA00754F98 /* JESAWallet.m in Sources */ = {isa = PBXBuildFile; fileRef = C69F52311B2491DA00754F98 /* JESAWallet.m */; };
+		C69F52331B2491DA00754F98 /* JESAWallet.m in Sources */ = {isa = PBXBuildFile; fileRef = C69F52311B2491DA00754F98 /* JESAWallet.m */; };
 		EDB49CA41B1CF3B8003288E4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB49CA31B1CF3B8003288E4 /* main.m */; };
 		EDB49CA71B1CF3B8003288E4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB49CA61B1CF3B8003288E4 /* AppDelegate.m */; };
 		EDB49CAA1B1CF3B8003288E4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB49CA91B1CF3B8003288E4 /* ViewController.m */; };
@@ -35,6 +38,9 @@
 		C69F52281B1F9ECB00754F98 /* JESABrokerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JESABrokerTests.m; sourceTree = "<group>"; };
 		C69F522A1B1F9FC500754F98 /* JESABroker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JESABroker.h; sourceTree = "<group>"; };
 		C69F522B1B1F9FC500754F98 /* JESABroker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JESABroker.m; sourceTree = "<group>"; };
+		C69F522E1B248F3200754F98 /* JESAWalletTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JESAWalletTests.m; sourceTree = "<group>"; };
+		C69F52301B2491DA00754F98 /* JESAWallet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JESAWallet.h; sourceTree = "<group>"; };
+		C69F52311B2491DA00754F98 /* JESAWallet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JESAWallet.m; sourceTree = "<group>"; };
 		EDB49C9E1B1CF3B7003288E4 /* Wallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDB49CA21B1CF3B8003288E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDB49CA31B1CF3B8003288E4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -120,6 +126,7 @@
 				EDB49CBB1B1CF3B8003288E4 /* Supporting Files */,
 				EDB49CDA1B1D0B31003288E4 /* JESAMoneyTests.m */,
 				C69F52281B1F9ECB00754F98 /* JESABrokerTests.m */,
+				C69F522E1B248F3200754F98 /* JESAWalletTests.m */,
 			);
 			path = WalletTests;
 			sourceTree = "<group>";
@@ -139,6 +146,8 @@
 				EDB49CD31B1D06D5003288E4 /* JESAMoney.m */,
 				C69F522A1B1F9FC500754F98 /* JESABroker.h */,
 				C69F522B1B1F9FC500754F98 /* JESABroker.m */,
+				C69F52301B2491DA00754F98 /* JESAWallet.h */,
+				C69F52311B2491DA00754F98 /* JESAWallet.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -253,6 +262,7 @@
 				C69F522C1B1F9FC500754F98 /* JESABroker.m in Sources */,
 				EDB49CAA1B1CF3B8003288E4 /* ViewController.m in Sources */,
 				EDB49CA71B1CF3B8003288E4 /* AppDelegate.m in Sources */,
+				C69F52321B2491DA00754F98 /* JESAWallet.m in Sources */,
 				EDB49CD41B1D06D5003288E4 /* JESAMoney.m in Sources */,
 				EDB49CA41B1CF3B8003288E4 /* main.m in Sources */,
 			);
@@ -264,6 +274,8 @@
 			files = (
 				EDB49CD51B1D06E7003288E4 /* JESAMoney.m in Sources */,
 				EDB49CDB1B1D0B31003288E4 /* JESAMoneyTests.m in Sources */,
+				C69F522F1B248F3200754F98 /* JESAWalletTests.m in Sources */,
+				C69F52331B2491DA00754F98 /* JESAWallet.m in Sources */,
 				C69F52291B1F9ECB00754F98 /* JESABrokerTests.m in Sources */,
 				C69F522D1B1F9FC500754F98 /* JESABroker.m in Sources */,
 			);
