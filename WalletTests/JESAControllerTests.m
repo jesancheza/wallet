@@ -59,15 +59,23 @@
     
 }
 
--(void) testThatTablehasOneSection{
-    
+-(void) testThatTablehasSameSectionsThatTypeCurrencyPlusOne{
     NSUInteger sections = [self.walletVC numberOfSectionsInTableView:nil];
-    XCTAssertEqual(sections, 1, @"Sections should be 1");
+    
+    XCTAssertEqual(sections, [self.wallet numberOfCurrencies] +1,@"Number of sections should be the same that number of currency");
 }
 
--(void) testThatNumberOfCellsIsNumberOfMoneysPlusOne{
-    
-    XCTAssertEqual(self.wallet.count + 1, [self.walletVC tableView:nil numberOfRowsInSection:0], @"Number of cells is the number of moneys plus 1 (the total)");
-}
+
+// Tests curso online
+//-(void) testThatTablehasOneSection{
+//    
+//    NSUInteger sections = [self.walletVC numberOfSectionsInTableView:nil];
+//    XCTAssertEqual(sections, 1, @"Sections should be 1");
+//}
+//
+//-(void) testThatNumberOfCellsIsNumberOfMoneysPlusOne{
+//    
+//    XCTAssertEqual(self.wallet.count + 1, [self.walletVC tableView:nil numberOfRowsInSection:0], @"Number of cells is the number of moneys plus 1 (the total)");
+//}
 
 @end

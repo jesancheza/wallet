@@ -63,4 +63,11 @@
     return result;
 }
 
+-(NSUInteger) numberOfCurrencies{
+    
+    NSSet *countCurrencies = [NSSet setWithArray:[self.moneys valueForKey:@"currency"]];
+                              
+    return [countCurrencies count];
+}
+
 @end
