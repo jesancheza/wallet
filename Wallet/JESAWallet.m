@@ -70,4 +70,18 @@
     return [countCurrencies count];
 }
 
+-(NSUInteger) countEuros{
+    
+    NSPredicate *filterEuros = [NSPredicate predicateWithFormat:@"currency like %@", @"EUR"];
+    
+    return [[self.moneys filteredArrayUsingPredicate:filterEuros] count];
+}
+
+-(NSUInteger) countDollars{
+    
+    NSPredicate *filterDollars = [NSPredicate predicateWithFormat:@"currency like %@", @"USD"];
+    
+    return [[self.moneys filteredArrayUsingPredicate:filterDollars] count];
+}
+
 @end

@@ -48,7 +48,15 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
     // Return the number of rows in the section.
-    return [self.model count] + 1;
+    if (section == 0) {
+        return [self.model countEuros] + 1;
+    }else if (section == 1){
+        return [self.model countDollars] + 1;
+    }else{
+        // Section total
+        return 1;
+    }
+
 }
 
 /*

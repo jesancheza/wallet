@@ -14,5 +14,7 @@
 @property (nonatomic, readonly) NSUInteger count;
 
 -(NSUInteger) numberOfCurrencies;
+-(NSUInteger) countEuros;
+-(NSUInteger) countDollars;
 
 @end

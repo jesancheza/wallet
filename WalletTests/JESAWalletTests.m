@@ -43,4 +43,40 @@
     XCTAssertEqualObjects(reduced, [JESAMoney dollarWithAmount:100],@"€40 + $20 = $100 2:1");
 }
 
+// $1 + €1 = 2 currencies
+-(void) testNumberOfCurrencies{
+    
+    JESAWallet *wallet = [[JESAWallet alloc] initWithAmount:1 currency:@"USD"];
+    [wallet plus:[JESAMoney euroWithAmount:1]];
+    
+    
+    NSUInteger numberOfCurrencies = wallet.numberOfCurrencies;
+    
+    XCTAssertEqual(numberOfCurrencies, 2, @"$1 + €1 = 2 currencies");
+}
+
+// $1 + €1 + €5 = 2 moneys euro
+-(void) testNumberOfEuros{
+    
+    JESAWallet *wallet = [[JESAWallet alloc] initWithAmount:1 currency:@"USD"];
+    [wallet plus:[JESAMoney euroWithAmount:1]];
+    [wallet plus:[JESAMoney euroWithAmount:5]];
+    
+    NSUInteger numberEuros = wallet.countEuros;
+    
+    XCTAssertEqual(numberEuros, 2, @"$1 + €1 + €5 = 2 moneys euro");
+}
+
+// $1 + €1 + $5 = 2 moneys dollar
+-(void) testNumberOfDollars{
+    
+    JESAWallet *wallet = [[JESAWallet alloc] initWithAmount:1 currency:@"USD"];
+    [wallet plus:[JESAMoney euroWithAmount:1]];
+    [wallet plus:[JESAMoney dollarWithAmount:5]];
+    
+    NSUInteger numberdollars = wallet.countDollars;
+    
+    XCTAssertEqual(numberdollars, 2, @"$1 + €1 + $5 = 2 moneys dollar");
+}
+
 @end

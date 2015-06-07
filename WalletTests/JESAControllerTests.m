@@ -65,6 +65,17 @@
     XCTAssertEqual(sections, [self.wallet numberOfCurrencies] +1,@"Number of sections should be the same that number of currency");
 }
 
+-(void) testThatSectionhasSameCellsThatMoneysPlusOne{
+    
+    // Comprobamos euros
+    XCTAssertEqual([self.wallet countEuros] + 1, [self.walletVC tableView:nil numberOfRowsInSection:0]);
+    
+    // Comprobamos dolares
+    XCTAssertEqual([self.wallet countDollars] + 1, [self.walletVC tableView:nil numberOfRowsInSection:1 ]);
+    
+    // Comprobamos sección del total
+    XCTAssertEqual(1, [self.walletVC tableView:nil numberOfRowsInSection:2]);
+}
 
 // Tests curso online
 //-(void) testThatTablehasOneSection{
